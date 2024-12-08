@@ -1,0 +1,53 @@
+Objetivo:
+Desenvolver um conjunto de pacotes em PL/SQL que implementem operações relacionadas às entidades Aluno, Disciplina e Professor, utilizando o Oracle como banco de dados. O trabalho busca consolidar os conhecimentos de criação e uso de procedures, functions e cursores, com ênfase em operações que envolvam parâmetros, cálculos e manipulação de dados.
+
+Descrição da Atividade:
+Implemente os pacotes conforme especificado a seguir:
+
+Pacote PKG_ALUNO
+Procedure de exclusão de aluno:
+Crie uma procedure que receba o ID de um aluno como parâmetro e exclua o registro correspondente na tabela de alunos. Além disso, todas as matrículas associadas ao aluno devem ser removidas.
+
+Cursor de listagem de alunos maiores de 18 anos:
+Desenvolva um cursor que liste o nome e a data de nascimento de todos os alunos com idade superior a 18 anos.
+
+Cursor com filtro por curso:
+Crie um cursor parametrizado que receba o id_curso e exiba os nomes dos alunos matriculados no curso especificado.
+
+Pacote PKG_DISCIPLINA
+Procedure de cadastro de disciplina:
+Crie uma procedure para cadastrar uma nova disciplina. A procedure deve receber como parâmetros o nome, a descrição e a carga horária da disciplina e inserir esses dados na tabela correspondente.
+
+Cursor para total de alunos por disciplina:
+Implemente um cursor que percorra as disciplinas e exiba o número total de alunos matriculados em cada uma. Exiba apenas as disciplinas com mais de 10 alunos.
+
+Cursor com média de idade por disciplina:
+Desenvolva um cursor parametrizado que receba o id_disciplina e calcule a média de idade dos alunos matriculados na disciplina especificada.
+
+Procedure para listar alunos de uma disciplina:
+Implemente uma procedure que receba o ID de uma disciplina como parâmetro e exiba os nomes dos alunos matriculados nela.
+
+Pacote PKG_PROFESSOR
+Cursor para total de turmas por professor:
+Desenvolva um cursor que liste os nomes dos professores e o total de turmas que cada um leciona. O cursor deve exibir apenas os professores responsáveis por mais de uma turma.
+
+Function para total de turmas de um professor:
+Crie uma function que receba o ID de um professor como parâmetro e retorne o total de turmas em que ele atua como responsável.
+
+Function para professor de uma disciplina:
+Desenvolva uma function que receba o ID de uma disciplina como parâmetro e retorne o nome do professor que ministra essa disciplina.
+
+Instruções:
+
+O código deve ser testado no ambiente Oracle.
+Organize todos os comandos e pacotes em um único arquivo com a extensão .sql.
+Submeta o trabalho por meio de um repositório no GitHub. O repositório deve conter:
+O arquivo .sql contendo o código completo.
+Um arquivo README.md explicando como executar o script no Oracle e um resumo do que cada pacote faz.
+Critérios de Avaliação:
+
+Correção e funcionalidade do código desenvolvido.
+Uso correto de procedures, functions e cursores.
+Adequação às especificações da atividade.
+Clareza, organização e boas práticas de programação.
+Organização e documentação no repositório GitHub.
